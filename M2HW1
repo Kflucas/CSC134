@@ -1,0 +1,73 @@
+// Kelvin Flucas
+// CSC134-0901
+// M2HW1-Bronze
+// 02/28/2025
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+    string name;
+    int account_num; 
+    double startingBalance;
+    double deposit;
+    double withdrawal;
+    double final_total;
+
+    
+    cout << "What is your name?" << endl;
+    cin >> name;
+
+    cout << "What is your starting account balance? $" << endl;
+    cin >> startingBalance;
+
+    cout << "What is your deposit amount? $" << endl;
+    cin >> deposit;
+
+    cout << "What is your withdrawal amount? $";
+    cin >> withdrawal;
+
+    final_total = startingBalance + deposit - withdrawal;
+    account_num = 12345678;
+
+    cout << "Account summary" << endl;
+    cout << "Name: " << name << endl;
+    cout << "Account Number: " << account_num << endl;
+    cout << "Balance: $" << final_total << endl;
+
+
+
+
+    //PIZZA PARTY
+    int pizza_order;
+    int slices;
+    int guests;
+
+    cout << "How many pizzas were ordered?" << endl;
+    cin >> pizza_order;
+    
+    cout << "How many slices does each pizza have?" << endl;
+    cin >> slices;
+
+    cout << "How many guests are coming?" << endl;
+    cin >> guests;
+
+    // each guest receives 3 slices of pizza
+    int total_slices;
+    int slicesNeeded;
+    int leftover;
+    
+    total_slices = pizza_order * slices;
+    slicesNeeded = guests * 3;
+    leftover = total_slices - slicesNeeded;
+
+    cout << "There will be " << leftover << " slices left." << endl;
+
+
+
+
+
+}
